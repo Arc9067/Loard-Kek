@@ -1,6 +1,6 @@
 /*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Vazirmatn:wght@700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@900&display=swap");
 @font-face {
   font-family: "eacologica round slab";
   src: url(./eacologica-round-slab-ffp.ttf);
@@ -123,6 +123,11 @@ header {
     font-size: 100px;
     line-height: 120px;
     color: #ffffff;
+
+    @media (max-width: 700px) {
+      font-size: 72px;
+      line-height: 86px;
+    }
   }
   p.info {
     font-family: "eacologica round slab";
@@ -164,5 +169,81 @@ header {
   .abso {
     right: 0;
     top: 0;
+  }
+}
+
+#tokenomics {
+  width: 100%;
+  padding-block: 50px;
+
+  h1.title {
+    font-family: "eacologica round slab";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+    color: #ffffff;
+
+    @media (max-width: 700px) {
+      font-size: 48px;
+      line-height: 58px;
+    }
+  }
+
+  .cd {
+    height: 300px;
+    width: 100%;
+
+    div {
+      width: 392px;
+      height: 212px;
+
+      background: #ffffff;
+      border-radius: 32px;
+
+      @media (max-width: 800px) {
+        width: 100%;
+      }
+
+      h2.head {
+        font-family: "M PLUS Rounded 1c", sans-serif;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 71px;
+        color: #4c8901;
+
+        @media (max-width: 700px) {
+          font-size: 48px;
+          line-height: 71px;
+        }
+      }
+      h1.head {
+        font-family: "eacologica round slab";
+        font-weight: 400;
+        font-size: 72px;
+        line-height: 86px;
+        color: #4c8901;
+
+        @media (max-width: 700px) {
+          font-size: 52px;
+          line-height: 86px;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  width: 100%;
+  padding-block: 50px;
+
+  a.logo {
+    font-family: "eacologica round slab";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #ffffff;
   }
 }
